@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Driver {
     public static void main(String[] args) {
         String filename = "java/sample.html";
-        DivFileExtract e = new DivFileExtract(filename);
+        DivFileExtractor e = new DivFileExtractor(filename);
         try {
             for (String divText : e.extract()) {
                 System.out.println(divText);
@@ -18,7 +18,7 @@ public class Driver {
         }
         System.out.println("----------------------");
         String url = "https://www.csee.umbc.edu/";
-        DivUrlExtract ue = new DivUrlExtract(url);
+        DivUrlExtractor ue = new DivUrlExtractor(url);
         try {
             for (String divText : ue.extract()) {
                 System.out.println(divText);

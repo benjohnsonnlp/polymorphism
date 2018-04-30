@@ -10,10 +10,10 @@ import java.util.ArrayList;
 /**
  * Created by Ben on 4/27/18.
  */
-public class DivUrlExtract {
+public class DivUrlExtractor {
     String url;
 
-    public DivUrlExtract(String url) {
+    public DivUrlExtractor(String url) {
         this.url = url;
     }
 

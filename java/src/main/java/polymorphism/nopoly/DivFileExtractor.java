@@ -1,4 +1,4 @@
-package polymorphism.init;
+package polymorphism.nopoly;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -11,10 +11,10 @@ import java.util.ArrayList;
 /**
  * Created by Ben on 4/26/18.
  */
-public class DivExtract {
+public class DivFileExtractor {
     String filename;
 
-    public DivExtract(String filename) {
+    public DivFileExtractor(String filename) {
         this.filename = filename;
     }
 
@@ -27,17 +27,5 @@ public class DivExtract {
         }
 
         return divTexts;
-    }
-
-    public static void main(String[] args) {
-        String filename = "java/sample.html";
-        DivExtract e = new DivExtract(filename);
-        try {
-            for (String divText : e.extract()) {
-                System.out.println(divText);
-            }
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
     }
 }
